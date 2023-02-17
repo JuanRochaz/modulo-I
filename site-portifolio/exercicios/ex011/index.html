@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../estilo-geral.css">
+    <title>Imagens, audios e videos</title>
+</head>
+<body>
+    <h1>Imagens</h1>
+    <p>Aqui podemos ver como as imagens mudam de tamanho de acordo com o tamanho da pagina</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/imagem-m.png" type="image/png">
+        <img src="Imagens/imagem-g.png" alt="imagem G">
+    </picture>
+            <!-- NUNCA COLOCAR "espaço" NOS NOMES DOS ARQUIVOS, POIS NÃO VAI FUNCIONAR!!!!!!-->
+    <picture>
+        <source media="(min-width: 1050px)" srcset="Imagens/imagem-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="Imagens/imagem-m.png" type="image/png">
+        <img src="Imagens/imagem-P.png" alt="imagem P">
+    </picture>
+            <!-- PODE SER FEITO DE MANEIRA INVERTIDA, COMEÇANDO PELA IMAGEM P E INDO PARA G, OU DA G E INDO PARA P-->
+    <h1>Aqui podemos colocar audio com HTML5</h1>
+    <audio preload="metadata" controls>
+        <source src="midia/twisted-nothing-worth.mp3" type="audio/mpeg">
+        <source src="midia/twisted-nothing-worth.ogg" type="audio/ogg">
+        <source src="midia/twisted-nothing-worth.wav" type="image/wav">
+        <p>Seu navegador não suporta áudio <a href="midia/twisted-nothing-worth.mp3" download="midia/twisted-nothing-worth" type="audio/mpeg"></a></p>
+    </audio>
+    <a href="../../index.htmll"><img src="../imagem/voltar.png" alt="seta-voltar" target="_self" rel="prev"><p>Volte Aqui!</p></a>
+    <!-- A OUTROS MODELOS COMPATIVEIS EM SITES, COMO O OGG E WAV->
+</body>
+</html>

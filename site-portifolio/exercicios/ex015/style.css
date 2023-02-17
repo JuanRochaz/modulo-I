@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* ESSE MODO É O ESTERNAL, MAIS UTILIZADO NA PROGRAMAÇÃO, PODENDO SER LINCADO EM DIVERSAS PAGINAS*/
+
+body{
+    background-color: #f08080;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+h1{
+    background-color: #7fffd4;
+    color: #0000ff;
+}
+h2{
+    color: chartreuse;
+}
+p{
+    text-align: justify;
+}
